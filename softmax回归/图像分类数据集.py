@@ -84,7 +84,7 @@ batch_size = 256
 
 # """使用4个进程来读取数据"""
 def get_dataloader_workers():
-    return 4
+    return 0
 
 
 # 通过ToTensor实例将图像数据从uint8格式变换成32位浮点数格式，并除以255使得所有像素的数值
