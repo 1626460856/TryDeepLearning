@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d9d3806-283e-4e6d-8b4e-5d2f170378c4" name="更改" comment="softmax回归实现算是基本完成了，总结写在了原理介绍的文本里">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softmax回归/softmax回归实现.py" beforeDir="false" afterPath="$PROJECT_DIR$/softmax回归/softmax回归实现.py" afterDir="false" />
-    </list>
+    <list default="true" id="1d9d3806-283e-4e6d-8b4e-5d2f170378c4" name="更改" comment="添加了一个验证显示函数" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -673,7 +670,7 @@
       <workItem from="1708522390382" duration="1681000" />
       <workItem from="1708524107104" duration="9024000" />
       <workItem from="1708584921657" duration="11162000" />
-      <workItem from="1708596134697" duration="19652000" />
+      <workItem from="1708596134697" duration="20170000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <option name="closed" value="true" />
@@ -699,7 +696,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708613818602</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加了一个验证显示函数">
+      <option name="closed" value="true" />
+      <created>1708619013004</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708619013004</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -709,11 +714,12 @@
     <MESSAGE value="第一次提交" />
     <MESSAGE value="处理一下data放的位置" />
     <MESSAGE value="softmax回归实现算是基本完成了，总结写在了原理介绍的文本里" />
-    <option name="LAST_COMMIT_MESSAGE" value="softmax回归实现算是基本完成了，总结写在了原理介绍的文本里" />
+    <MESSAGE value="添加了一个验证显示函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了一个验证显示函数" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/try$python.coverage" NAME="python控制流的梯度计算 覆盖结果" MODIFIED="1706520583175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/微积分" />
-    <SUITE FILE_PATH="coverage/try$softmax.coverage" NAME="softmax回归实现 覆盖结果" MODIFIED="1708618407293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/softmax回归" />
+    <SUITE FILE_PATH="coverage/try$softmax.coverage" NAME="softmax回归实现 覆盖结果" MODIFIED="1708618849224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/softmax回归" />
     <SUITE FILE_PATH="coverage/try$__1_.coverage" NAME="矩阵 (1) 覆盖结果" MODIFIED="1708346764436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/矩阵" />
     <SUITE FILE_PATH="coverage/try$1.coverage" NAME="1 覆盖结果" MODIFIED="1708589314029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/matplotlib库绘制图像" />
     <SUITE FILE_PATH="coverage/try$csv.coverage" NAME="csv文件演示 覆盖结果" MODIFIED="1706520773713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据处理/数据预处理" />
