@@ -15,8 +15,8 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 
 d2l.use_svg_display()  # 它用于指示该教材在显示图形时使用 SVG（可缩放矢量图形）格式进行显示。
 trans = transforms.ToTensor()  # 这个转换操作通常用于将图像数据准备成神经网络模型的输入，因为大多数深度学习模型都要求输入是张量格式
-mnist_train = torchvision.datasets.FashionMNIST(root=".//data", train=True, transform=trans, download=True)
-mnist_test = torchvision.datasets.FashionMNIST(root=".//data", train=False, transform=trans, download=True)
+mnist_train = torchvision.datasets.FashionMNIST(root="../data", train=True, transform=trans, download=True)
+mnist_test = torchvision.datasets.FashionMNIST(root="../data", train=False, transform=trans, download=True)
 # mnist_train 包含 60000 个样本，每个样本由一个长度为 2 的元组组成，第一个元素是图像数据，第二个元素是对应的标签。
 # 每个图像数据是一个张量，其形状为 [1, 28, 28]，表示该图像是单通道的，大小为 $28 \times 28$ 像素的灰度图像。
 # mnist_test 包含 10000 个样本，同样每个样本由一个长度为 2 的元组组成，第一个元素也是图像数据，第二个元素是对应的标签。
@@ -107,8 +107,8 @@ def load_data_fashion_mnist(batch_size, resize=None):
     if resize:
         trans.insert(0, transforms.Resize(resize))
     trans = transforms.Compose(trans)
-    mnist_train = torchvision.datasets.FashionMNIST(root=".//data", train=True, transform=trans, download=True)
-    mnist_test = torchvision.datasets.FashionMNIST(root=".//data", train=False, transform=trans, download=True)
+    mnist_train = torchvision.datasets.FashionMNIST(root="../data", train=True, transform=trans, download=True)
+    mnist_test = torchvision.datasets.FashionMNIST(root="../data", train=False, transform=trans, download=True)
 
     return (data.DataLoader(mnist_train, batch_size, shuffle=True,
                                   num_workers=get_dataloader_workers()),
