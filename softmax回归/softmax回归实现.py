@@ -162,8 +162,26 @@ def train_ch3(net, train_iter, test_iter, loss, num_epochs, updater):
     assert test_acc <= 1 and test_acc > 0.7, test_acc
 
 
-num_epochs = 10
+def predict_ch3(net, test_iter, n=6):
+    """Predict labels (defined in Chapter 3)."""
+    for X, y in test_iter:
+        break
+    trues = d2l.get_fashion_mnist_labels(y)
+    preds = d2l.get_fashion_mnist_labels(d2l.argmax(net(X), axis=1))
+    titles = [true + '\n' + pred for true, pred in zip(trues, preds)]
+    d2l.show_images(d2l.reshape(X[0:n], (n, 28, 28)), 1, n,
+                    titles=titles[0:n], scale=3.0)
+
+# 这个是一个验证的函数，取前6张图进行验证，我分了两次调用，训练前和训练后，并且在原来写的函数里面加了一个”, scale=3.0“，不然显示不完整
+d2l.set_figsize()
+predict_ch3(net, test_iter)
+plt.show()
+
+num_epochs = 5
 print(W, b)
 train_ch3(net, train_iter, test_iter, cross_entropy, num_epochs, updatar)
 plt.show()
 print(W, b)
+
+predict_ch3(net, test_iter)
+plt.show()
