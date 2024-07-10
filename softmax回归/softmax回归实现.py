@@ -148,6 +148,7 @@ lr = 0.1
 
 
 def updatar(batch_size):
+    # 梯度下降更新参数
     return d2l.sgd([W, b], lr, batch_size)
 
 
@@ -196,6 +197,5 @@ print(W, b)
 train_ch3(net, train_iter, test_iter, cross_entropy, num_epochs, updatar)
 plt.show()
 print(W, b)
-
 predict_ch3(net, test_iter)
 plt.show()

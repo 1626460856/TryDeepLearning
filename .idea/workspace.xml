@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d9d3806-283e-4e6d-8b4e-5d2f170378c4" name="更改" comment="多层感知机">
-      <change afterPath="$PROJECT_DIR$/matplotlib库绘制图像/概率/概率检测说明.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/softmax回归/softmax说明.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/try.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/try.iml" afterDir="false" />
+    <list default="true" id="1d9d3806-283e-4e6d-8b4e-5d2f170378c4" name="更改" comment="softmax线性回归注释">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/FashionMNIST/raw/t10k-images-idx3-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/FashionMNIST/raw/t10k-images-idx3-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/FashionMNIST/raw/t10k-labels-idx1-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/FashionMNIST/raw/t10k-labels-idx1-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/FashionMNIST/raw/train-images-idx3-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/FashionMNIST/raw/train-images-idx3-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/FashionMNIST/raw/train-labels-idx1-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/FashionMNIST/raw/train-labels-idx1-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/matplotlib库绘制图像/概率/骰子检测.py" beforeDir="false" afterPath="$PROJECT_DIR$/matplotlib库绘制图像/概率/骰子检测.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/softmax回归/softmax回归实现.py" beforeDir="false" afterPath="$PROJECT_DIR$/softmax回归/softmax回归实现.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softmax回归/图像分类数据集.py" beforeDir="false" afterPath="$PROJECT_DIR$/softmax回归/图像分类数据集.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +30,12 @@
     &quot;assignee&quot;: &quot;1626460856&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="05e32552-d830-42a8-b54b-ae94946a2c99" />
-        <option name="url" value="https://github.com/1626460856/TryDeepLearning.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/1626460856/TryDeepLearning.git",
+    "accountId": "40f35866-faa5-46c9-a356-dff08f379dfa"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="gzip://D:/视觉实验室/try/data/FashionMNIST/raw/train-images-idx3-ubyte.gz!/train-images-idx3-ubyte" root0="SKIP_INSPECTION" />
   </component>
@@ -127,7 +109,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.softmax回归实现">
-    <configuration name="图像分类数据集" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="多层感知机" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="try" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,12 +118,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/softmax回归" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/感知机" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/softmax回归/图像分类数据集.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/感知机/多层感知机.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -751,10 +733,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.softmax回归实现" />
+        <item itemvalue="Python.多层感知机" />
         <item itemvalue="Python.骰子检测" />
         <item itemvalue="Python.矩阵函数求导" />
         <item itemvalue="Python.线性回归实现" />
-        <item itemvalue="Python.图像分类数据集" />
       </list>
     </recent_temporary>
   </component>
@@ -796,7 +778,7 @@
       <workItem from="1720581817650" duration="500000" />
       <workItem from="1720582376169" duration="140000" />
       <workItem from="1720582539585" duration="1970000" />
-      <workItem from="1720584553118" duration="21321000" />
+      <workItem from="1720584553118" duration="25323000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <option name="closed" value="true" />
@@ -854,7 +836,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708790634521</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="softmax线性回归注释">
+      <option name="closed" value="true" />
+      <created>1720609283157</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720609283157</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -878,14 +868,15 @@
     <MESSAGE value="添加了一个验证显示函数" />
     <MESSAGE value="softmax回归简洁实现" />
     <MESSAGE value="多层感知机" />
-    <option name="LAST_COMMIT_MESSAGE" value="多层感知机" />
+    <MESSAGE value="softmax线性回归注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="softmax线性回归注释" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/try$main.coverage" NAME="main Coverage Results" MODIFIED="1720584932173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/try$csv.coverage" NAME="csv文件演示 覆盖结果" MODIFIED="1706520773713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据处理/数据预处理" />
     <SUITE FILE_PATH="coverage/try$python.coverage" NAME="python控制流的梯度计算 覆盖结果" MODIFIED="1706520583175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/微积分" />
-    <SUITE FILE_PATH="coverage/try$.coverage" NAME="骰子检测 Coverage Results" MODIFIED="1720595728788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/matplotlib库绘制图像/概率" />
-    <SUITE FILE_PATH="coverage/try$softmax.coverage" NAME="softmax回归实现 Coverage Results" MODIFIED="1720606782126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/softmax回归" />
+    <SUITE FILE_PATH="coverage/try$.coverage" NAME="多层感知机 Coverage Results" MODIFIED="1720609855119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/感知机" />
+    <SUITE FILE_PATH="coverage/try$softmax.coverage" NAME="softmax回归实现 Coverage Results" MODIFIED="1720612645331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/softmax回归" />
     <SUITE FILE_PATH="coverage/try$1.coverage" NAME="1 覆盖结果" MODIFIED="1708589314029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/matplotlib库绘制图像" />
     <SUITE FILE_PATH="coverage/try$__1_.coverage" NAME="矩阵 (1) 覆盖结果" MODIFIED="1708346764436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/矩阵" />
     <SUITE FILE_PATH="coverage/try$python__1_.coverage" NAME="更改矩阵python控制流的梯度计算 (1) 覆盖结果" MODIFIED="1702465567882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mxnet包" />
