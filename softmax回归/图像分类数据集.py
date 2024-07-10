@@ -3,7 +3,6 @@ import sys
 
 import torch
 import torchvision
-from mxnet import gluon
 from torch.utils import data
 from torch.utils.data import DataLoader
 from torchvision import transforms

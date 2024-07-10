@@ -1,7 +1,6 @@
 import os
 
 import torch
-from IPython import display
 from d2l import torch as d2l
 from d2l.torch import Accumulator, Animator
 from matplotlib import pyplot as plt
@@ -29,7 +28,8 @@ b = torch.zeros(num_outputs, requires_grad=True)
 
 # 演示一下按维求和
 X = torch.tensor([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])
-print(X.sum(0, keepdim=True), X.sum(1, keepdim=True))
+print("示例张量：\n", X)
+print("沿着竖轴求和：\n", X.sum(0, keepdim=True), "\n沿着横轴求和：\n", X.sum(1, keepdim=True))
 
 
 # 书写softmax函数
@@ -41,10 +41,12 @@ def softmax(X):
 
 
 # 验证这个函数
+# 生成一个形状为(2, 5)的张量X，
+# 其中的元素来自均值为0、标准差为1的正态分布。这个张量可以视为有2个样本，每个样本有5个特征。
 X = torch.normal(0, 1, size=(2, 5))
-print(X)
-print(softmax(X))
-print(softmax(X).sum(1))  # 对softmax函数的输出结果沿着第1维度进行求和，即对每一行的元素求和，然后打印结果。
+print("示例张量：\n", X)
+print("softmax线性转化：\n", softmax(X))
+print("求和验证：\n", softmax(X).sum(1))  # 对softmax函数的输出结果沿着第1维度进行求和，即对每一行的元素求和，然后打印结果。
 
 
 # 实现softmax回归模型
@@ -62,9 +64,10 @@ def net(X):
 # 输出的是一个概率分布向量，其中每个元素表示样本属于对应类别的概率。
 
 # 演示提取预测正确的概率
-y = torch.tensor([0, 2])  # 有两个样本的真实类别分别是0和2
+y = torch.tensor([0, 2])  # 假设估计两个样本的真实类别分别是0和2
 y_hat = torch.tensor([[0.1, 0.3, 0.6], [0.3, 0.2, 0.5]])  # 这两个样本的0，1，2类概率的预测结果分别是这样
-print(y_hat[[0, 1], y])
+
+print("输出y_hat的第一组张量的第y[0]个元素，再输出y_hat的第二组张量的第y[1]个元素：\n", y_hat[[0, 1], y])
 
 
 # 提取出预测结果中实际真实符合的那一项的概率，比如第一个样本属于第一类，那么就把第一个样本的预测概率中第一类的概率也就是0.1提出来
@@ -76,18 +79,22 @@ def cross_entropy(y_hat, y):
     return -torch.log(y_hat[range(len(y_hat)), y])
 
 
+print("y为真实值对应预测标签，y_hat为预测概率属于0-1之间，一共有三种标签对应的预测概率，取真实的y值对应的就是预测的成功率")
+print(
+    "通过交叉熵损失函数的线性转化，将0-1分布的数据映射在-lg(x)函数中更直观，值越大，效果越不好，当前示例预测的交叉熵损失值为：")
 print(cross_entropy(y_hat, y))
 
 
 # 计算预测正确的数量
 def accuracy(y_hat, y):
     if len(y_hat.shape) > 1 and y_hat.shape[1] > 1:
-        y_hat = y_hat.argmax(axis=1)  # 如果 y_hat 是一个二维数组且有多个类别（即列数大于 1），则将其转换为一维数组，取每一行中最大值所在的索引作为预测标签。
+        # 如果 y_hat 是一个二维数组且有多个类别（即列数大于 1），则将其转换为一维数组，取每一行中最大值所在的索引作为预测标签。
+        y_hat = y_hat.argmax(axis=1)
     cmp = y_hat.type(y.dtype) == y  # 将预测标签与真实标签 y 进行比较，生成一个布尔类型的数组 cmp，表示预测是否正确。
-    return float(cmp.type(y.dtype).sum())  # 计算正确预测的数量，并除以总样本数，得到模型的准确率。
+    return float(cmp.type(y.dtype).sum())  # 返回正确预测的数量。
 
 
-print(accuracy(y_hat, y) / len(y))
+print("样本预测正确率：\n", accuracy(y_hat, y) / len(y))
 
 
 # 用于评估神经网络模型在给定数据迭代器上的准确率
@@ -102,10 +109,14 @@ def evaluate_accuracy(net, data_iter):  # net 表示神经网络模型，data_it
 
 
 # 由于操作系统是windows，所以不能用那个预设的4进程，在torch.py文件中找到d2l.torch.get_dataloader_workers函数，将返回值修改为0
-print(evaluate_accuracy(net, test_iter))
+print("先把数据放入w，b，线性公式组成的神经网络net得到对数据的预测值")
+print("把预测值与真实值放入 accuracy正确数量统计函数得到正确预测的数量")
+print("再把正确预测的数量与总数量放入evaluate_accuracy函数得到正确率")
+print("当前评估由计算公式及参数W偏置b组成的神经网络模型在给定数据迭代器上的准确率: \n",
+      evaluate_accuracy(net, test_iter))
 
 
-# softmax回归训练
+# softmax回归训练函数，用于更新参数Wb以及反馈平均损失和平均准确率
 def train_epoch_ch3(net, train_iter, loss, updater):
     if isinstance(net, torch.nn.Module):
         net.train()  # 首先检查 net 是否是 torch.nn.Module 类型的实例，如果是的话，将模型置为训练模式。
@@ -118,6 +129,7 @@ def train_epoch_ch3(net, train_iter, loss, updater):
             # 检查是否使用了优化器，如果是的话，则执行优化器相关的操作，包括反向传播、参数更新以及统计训练指标
             updater.zero_grad()  # 清零优化器中参数的梯度，避免梯度累积
             l.backward()  # 执行反向传播计算梯度。
+            # 这里由于运用了-lg(x)激活函数，所以离真实值越大，那么待训练参数变更幅度越大
             updater.step()  # 根据计算得到的梯度执行参数更新。
             metric.add(  # 将训练损失、训练准确率的分子和分母累加到累加器中。
                 float(l) * len(y), accuracy(y_hat, y),
@@ -131,6 +143,7 @@ def train_epoch_ch3(net, train_iter, loss, updater):
     # metric[0] / metric[2] 计算的是平均损失，metric[1] / metric[2] 计算的是平均准确率
 
 
+# 超参数学习率
 lr = 0.1
 
 
@@ -171,6 +184,7 @@ def predict_ch3(net, test_iter, n=6):
     titles = [true + '\n' + pred for true, pred in zip(trues, preds)]
     d2l.show_images(d2l.reshape(X[0:n], (n, 28, 28)), 1, n,
                     titles=titles[0:n], scale=3.0)
+
 
 # 这个是一个验证的函数，取前6张图进行验证，我分了两次调用，训练前和训练后，并且在原来写的函数里面加了一个”, scale=3.0“，不然显示不完整
 d2l.set_figsize()

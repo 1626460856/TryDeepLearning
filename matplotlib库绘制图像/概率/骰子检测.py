@@ -4,15 +4,18 @@ from mxnet import npx
 import numpy as np
 from d2l import mxnet as d2l
 
+# 调用此函数使mxnet的np模块与numpy兼容
 npx.set_np()
 
-fair_probs = [1.0 / 6] * 6
+#fair_probs = [1.0 / 6] * 6
+fair_probs = [0.1,0.1,0.2,0.3,0.2,0.1]
 # 定义了一个包含 6 个元素的列表，每个元素的取值都是 1/6，表示一个公平的六面骰子的各个面出现的概率
 
 counts = np.random.multinomial(100, fair_probs, size=500)
-# 该函数会根据多项分布在定义的元素列表里抽取n个样本，返回一个列表，列表中有 6 个元素，表示每个类别被抽中的次数,size是返回列表的尺寸
+# 该函数会根据多项分布在定义的元素列表里抽取n个样本，返回一个列表，
+# 列表中有 6 个元素，表示每个类别被抽中的次数,size是返回列表的尺寸
 
-print(counts)
+print(counts[0])
 cum_counts = counts.astype(np.float32).cumsum(axis=0)
 # 将counts转换为float32类型，并对每一列进行累计求和，得到累计频率
 estimates = cum_counts / cum_counts.sum(axis=1, keepdims=True)
