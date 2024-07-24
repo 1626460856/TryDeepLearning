@@ -32,9 +32,9 @@ def net(X):
 
 
 loss = nn.CrossEntropyLoss()
-#  交叉熵损失（Cross Entropy Loss）函数。
+#  交叉熵损失（Cross Entropy Loss）函数。softmax函数
 # 训练
-num_epochs,lr = 10,0.01
+num_epochs,lr = 3,0.01
 updater = torch.optim.SGD(parames, lr=lr)
 print(parames)
 d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs,updater)
