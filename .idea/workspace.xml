@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d9d3806-283e-4e6d-8b4e-5d2f170378c4" name="更改" comment="卷积">
-      <change afterPath="$PROJECT_DIR$/matplotlib库绘制图像/输出图像.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/卷积神经网络/LeNet/LeNet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/卷积神经网络/LeNet/LeNet说明.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/卷积神经网络/LeNet/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/卷积神经网络/池化层/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/卷积神经网络/池化层/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/卷积神经网络/池化层/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/卷积神经网络/池化层/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/卷积神经网络/池化层/img_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/卷积神经网络/池化层/池化层.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/卷积神经网络/池化层/池化层说明.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maskrcnn/笔记/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maskrcnn/笔记/理解mask-rcnn.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maskrcnn/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/maskrcnn/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maskrcnn/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/maskrcnn/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +26,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/maskrcnn" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -63,62 +57,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.GPU.executor&quot;: &quot;Run&quot;,
-    &quot;Python.LeNet.executor&quot;: &quot;Run&quot;,
-    &quot;Python.csv文件演示.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.python控制流的梯度计算.executor&quot;: &quot;Run&quot;,
-    &quot;Python.softmax回归实现.executor&quot;: &quot;Run&quot;,
-    &quot;Python.softmax回归简洁实现.executor&quot;: &quot;Run&quot;,
-    &quot;Python.从全连接到卷积 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.从全连接到卷积.executor&quot;: &quot;Run&quot;,
-    &quot;Python.分离计算.executor&quot;: &quot;Run&quot;,
-    &quot;Python.参数管理.executor&quot;: &quot;Run&quot;,
-    &quot;Python.图像分类数据集.executor&quot;: &quot;Run&quot;,
-    &quot;Python.填充和步幅.executor&quot;: &quot;Run&quot;,
-    &quot;Python.多层感知机.executor&quot;: &quot;Run&quot;,
-    &quot;Python.多层感知机简洁实现.executor&quot;: &quot;Run&quot;,
-    &quot;Python.多输入和多输出.executor&quot;: &quot;Run&quot;,
-    &quot;Python.层和块.executor&quot;: &quot;Run&quot;,
-    &quot;Python.更改矩阵python控制流的梯度计算 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.查找模块中的所有函数和类.executor&quot;: &quot;Run&quot;,
-    &quot;Python.求和.executor&quot;: &quot;Run&quot;,
-    &quot;Python.求导.executor&quot;: &quot;Run&quot;,
-    &quot;Python.池化层.executor&quot;: &quot;Run&quot;,
-    &quot;Python.矩阵 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.矩阵.executor&quot;: &quot;Run&quot;,
-    &quot;Python.矩阵函数求导.executor&quot;: &quot;Run&quot;,
-    &quot;Python.线性回归实现.executor&quot;: &quot;Run&quot;,
-    &quot;Python.线性回归的简洁实现.executor&quot;: &quot;Run&quot;,
-    &quot;Python.绘制函数.executor&quot;: &quot;Run&quot;,
-    &quot;Python.绘制函数及切线.executor&quot;: &quot;Run&quot;,
-    &quot;Python.绘制导函数图像.executor&quot;: &quot;Run&quot;,
-    &quot;Python.自动微分.executor&quot;: &quot;Run&quot;,
-    &quot;Python.自定义层.executor&quot;: &quot;Run&quot;,
-    &quot;Python.读写文件.executor&quot;: &quot;Run&quot;,
-    &quot;Python.转置.executor&quot;: &quot;Run&quot;,
-    &quot;Python.非标量函数求导.executor&quot;: &quot;Run&quot;,
-    &quot;Python.非标量变量的反向传播.executor&quot;: &quot;Run&quot;,
-    &quot;Python.骰子检测.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/视觉实验室/try/感知机&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.1.executor": "Run",
+    "Python.GPU.executor": "Run",
+    "Python.LeNet.executor": "Run",
+    "Python.csv文件演示.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.python train.py --use-cuda --iters 200 --dataset coco --data-dir /data/coco2017.executor": "Run",
+    "Python.python控制流的梯度计算.executor": "Run",
+    "Python.softmax回归实现.executor": "Run",
+    "Python.softmax回归简洁实现.executor": "Run",
+    "Python.train.executor": "Run",
+    "Python.从全连接到卷积 (1).executor": "Run",
+    "Python.从全连接到卷积.executor": "Run",
+    "Python.分离计算.executor": "Run",
+    "Python.参数管理.executor": "Run",
+    "Python.图像分类数据集.executor": "Run",
+    "Python.填充和步幅.executor": "Run",
+    "Python.多层感知机.executor": "Run",
+    "Python.多层感知机简洁实现.executor": "Run",
+    "Python.多输入和多输出.executor": "Run",
+    "Python.层和块.executor": "Run",
+    "Python.更改矩阵python控制流的梯度计算 (1).executor": "Run",
+    "Python.查找模块中的所有函数和类.executor": "Run",
+    "Python.求和.executor": "Run",
+    "Python.求导.executor": "Run",
+    "Python.池化层.executor": "Run",
+    "Python.矩阵 (1).executor": "Run",
+    "Python.矩阵.executor": "Run",
+    "Python.矩阵函数求导.executor": "Run",
+    "Python.线性回归实现.executor": "Run",
+    "Python.线性回归的简洁实现.executor": "Run",
+    "Python.绘制函数.executor": "Run",
+    "Python.绘制函数及切线.executor": "Run",
+    "Python.绘制导函数图像.executor": "Run",
+    "Python.自动微分.executor": "Run",
+    "Python.自定义层.executor": "Run",
+    "Python.读写文件.executor": "Run",
+    "Python.转置.executor": "Run",
+    "Python.非标量函数求导.executor": "Run",
+    "Python.非标量变量的反向传播.executor": "Run",
+    "Python.骰子检测.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/视觉实验室/try/感知机",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\视觉实验室\try\感知机" />
@@ -127,14 +123,14 @@
       <recent name="D:\视觉实验室\try\softmax回归\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\视觉实验室\try\maskrcnn\笔记" />
       <recent name="D:\视觉实验室\try\卷积神经网络\卷积层" />
       <recent name="D:\视觉实验室\try\softmax回归" />
       <recent name="D:\视觉实验室\try" />
       <recent name="D:\视觉实验室\try\softmax回归\data\FashionMNIST\raw" />
-      <recent name="D:\视觉实验室\try\matplotlib库绘制图像" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.LeNet">
+  <component name="RunManager" selected="Python.train">
     <configuration name="从全连接到卷积 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="try" />
       <option name="ENV_FILES" value="" />
@@ -150,29 +146,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/卷积神经网络/卷积层/从全连接到卷积.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="多层感知机" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="try" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/感知机" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/感知机/多层感知机.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -986,6 +959,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="python train.py --use-cuda --iters 200 --dataset coco --data-dir /data/coco2017" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="try" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/maskrcnn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="train.py" />
+      <option name="PARAMETERS" value="--use-cuda --iters 200 --dataset coco --data-dir /data/coco2017" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="softmax回归实现" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="try" />
       <option name="ENV_FILES" value="" />
@@ -1009,12 +1005,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="try" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/maskrcnn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/maskrcnn/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.python train.py --use-cuda --iters 200 --dataset coco --data-dir /data/coco2017" />
         <item itemvalue="Python.LeNet" />
         <item itemvalue="Python.softmax回归实现" />
         <item itemvalue="Python.从全连接到卷积 (1)" />
-        <item itemvalue="Python.多层感知机" />
       </list>
     </recent_temporary>
   </component>
@@ -1062,7 +1082,7 @@
       <workItem from="1721731071024" duration="9459000" />
       <workItem from="1721809381178" duration="22266000" />
       <workItem from="1721903777226" duration="12209000" />
-      <workItem from="1721918827465" duration="5263000" />
+      <workItem from="1721918827465" duration="11837000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <option name="closed" value="true" />
@@ -1144,7 +1164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721835187060</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="卷积">
+      <option name="closed" value="true" />
+      <created>1721924358686</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721924358686</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1173,15 +1201,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="卷积" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/try$LeNet.coverage" NAME="LeNet Coverage Results" MODIFIED="1721923502091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/卷积神经网络/LeNet" />
     <SUITE FILE_PATH="coverage/try$main.coverage" NAME="main Coverage Results" MODIFIED="1720584932173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/try$csv.coverage" NAME="csv文件演示 覆盖结果" MODIFIED="1706520773713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据处理/数据预处理" />
     <SUITE FILE_PATH="coverage/try$GPU.coverage" NAME="GPU Coverage Results" MODIFIED="1721809428043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/深度学习计算" />
     <SUITE FILE_PATH="coverage/try$python.coverage" NAME="python控制流的梯度计算 覆盖结果" MODIFIED="1706520583175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/微积分" />
+    <SUITE FILE_PATH="coverage/try$LeNet.coverage" NAME="LeNet Coverage Results" MODIFIED="1721924210472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/卷积神经网络/LeNet" />
+    <SUITE FILE_PATH="coverage/try$train.coverage" NAME="train Coverage Results" MODIFIED="1721930729603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/maskrcnn" />
     <SUITE FILE_PATH="coverage/try$.coverage" NAME="池化层 Coverage Results" MODIFIED="1721910307715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/卷积神经网络/池化层" />
     <SUITE FILE_PATH="coverage/try$softmax.coverage" NAME="softmax回归实现 Coverage Results" MODIFIED="1721919014917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/softmax回归" />
     <SUITE FILE_PATH="coverage/try$1.coverage" NAME="1 覆盖结果" MODIFIED="1708589314029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/matplotlib库绘制图像" />
     <SUITE FILE_PATH="coverage/try$__1_.coverage" NAME="从全连接到卷积 (1) Coverage Results" MODIFIED="1721833767005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/卷积神经网络/卷积层" />
     <SUITE FILE_PATH="coverage/try$python__1_.coverage" NAME="更改矩阵python控制流的梯度计算 (1) 覆盖结果" MODIFIED="1702465567882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mxnet包" />
+    <SUITE FILE_PATH="coverage/try$python_train_py___use_cuda___iters_200___dataset_coco___data_dir__data_coco2017.coverage" NAME="python train.py --use-cuda --iters 200 --dataset coco --data-dir /data/coco2017 Coverage Results" MODIFIED="1721926201018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/maskrcnn" />
   </component>
 </project>
