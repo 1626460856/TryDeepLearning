@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d9d3806-283e-4e6d-8b4e-5d2f170378c4" name="更改" comment="卷积">
-      <change afterPath="$PROJECT_DIR$/maskrcnn/笔记/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maskrcnn/笔记/理解mask-rcnn.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1d9d3806-283e-4e6d-8b4e-5d2f170378c4" name="更改" comment="maskrcnn">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maskrcnn/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/maskrcnn/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maskrcnn/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/maskrcnn/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +21,8 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/maskrcnn" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/maskrcnn1" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -1082,7 +1078,7 @@
       <workItem from="1721731071024" duration="9459000" />
       <workItem from="1721809381178" duration="22266000" />
       <workItem from="1721903777226" duration="12209000" />
-      <workItem from="1721918827465" duration="11837000" />
+      <workItem from="1721918827465" duration="14333000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <option name="closed" value="true" />
@@ -1172,7 +1168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721924358686</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="maskrcnn">
+      <option name="closed" value="true" />
+      <created>1721932827827</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721932827827</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1198,7 +1202,8 @@
     <MESSAGE value="多层感知机" />
     <MESSAGE value="softmax线性回归注释" />
     <MESSAGE value="卷积" />
-    <option name="LAST_COMMIT_MESSAGE" value="卷积" />
+    <MESSAGE value="maskrcnn" />
+    <option name="LAST_COMMIT_MESSAGE" value="maskrcnn" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/try$main.coverage" NAME="main Coverage Results" MODIFIED="1720584932173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
