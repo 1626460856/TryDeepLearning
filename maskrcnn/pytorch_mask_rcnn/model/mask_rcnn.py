@@ -11,8 +11,9 @@ from .rpn import RPNHead, RegionProposalNetwork
 from .pooler import RoIAlign
 from .roi_heads import RoIHeads
 from .transform import Transformer
-
-
+'''
+从当前包中导入一些自定义模块和类，用于生成锚点、区域建议网络（RPN）、RoI对齐、RoI头部和图像变换。
+'''
 class MaskRCNN(nn.Module):
     """
     Implements Mask R-CNN.
@@ -77,7 +78,7 @@ class MaskRCNN(nn.Module):
         box_num_detections (int): maximum number of detections, for all classes.
         
     """
-    
+    #定义了MaskRCNN类，继承自nn.Module，实现了Mask R-CNN模型的初始化和前向传播方法。
     def __init__(self, backbone, num_classes,
                  # RPN parameters
                  rpn_fg_iou_thresh=0.7, rpn_bg_iou_thresh=0.3,
@@ -154,7 +155,7 @@ class MaskRCNN(nn.Module):
             result = self.transformer.postprocess(result, image_shape, ori_image_shape)
             return result
         
-        
+#定义了FastRCNNPredictor类，继承自nn.Module，用于预测分类分数和边界框回归。
 class FastRCNNPredictor(nn.Module):
     def __init__(self, in_channels, mid_channels, num_classes):
         super().__init__()
@@ -172,7 +173,7 @@ class FastRCNNPredictor(nn.Module):
 
         return score, bbox_delta        
     
-    
+#定义了MaskRCNNPredictor类，继承自nn.Sequential，用于预测分割掩码。
 class MaskRCNNPredictor(nn.Sequential):
     def __init__(self, in_channels, layers, dim_reduced, num_classes):
         """
@@ -199,7 +200,7 @@ class MaskRCNNPredictor(nn.Sequential):
             if 'weight' in name:
                 nn.init.kaiming_normal_(param, mode='fan_out', nonlinearity='relu')
                 
-    
+#定义了ResBackbone类，继承自nn.Module，用于构建ResNet骨干网络
 class ResBackbone(nn.Module):
     def __init__(self, backbone_name, pretrained):
         super().__init__()
@@ -229,7 +230,7 @@ class ResBackbone(nn.Module):
         x = self.layer_block_module(x)
         return x
 
-    
+#定义了maskrcnn_resnet50函数，用于构建带有ResNet-50骨干网络的Mask R-CNN模型，并加载预训练权重。
 def maskrcnn_resnet50(pretrained, num_classes, pretrained_backbone=True):
     """
     Constructs a Mask R-CNN model with a ResNet-50 backbone.

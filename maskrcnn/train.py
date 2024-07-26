@@ -6,7 +6,7 @@ import time
 
 import torch
 
-from maskrcnn1 import pytorch_mask_rcnn as pmr
+from maskrcnn import pytorch_mask_rcnn as pmr
 
 
 def try_gpu(i=0):  #@save
@@ -40,7 +40,8 @@ def main(args):
     print(args)
     num_classes = max(d_train.dataset.classes) + 1 # including background class
     model = pmr.maskrcnn_resnet50(True, num_classes).to(device)
-    
+    # 打印整个网络结构
+    print(model)
     params = [p for p in model.parameters() if p.requires_grad]
     optimizer = torch.optim.SGD(
         params, lr=args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
@@ -128,7 +129,7 @@ if __name__ == "__main__":
         args.ckpt_path = "./maskrcnn_{}.pth".format(args.dataset)
     if args.results is None:
         args.results = os.path.join(os.path.dirname(args.ckpt_path), "maskrcnn_results.pth")
-    
+
     main(args)
     
     
